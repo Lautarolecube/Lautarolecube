@@ -15,7 +15,6 @@
 
 # Hi, I'm Lautaro 👋
 
-### Software Developer · Systems Engineering Student · Product & Automation
   <img src="./assets/about.svg">
 </a>
 ---
