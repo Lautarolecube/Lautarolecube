@@ -24,11 +24,8 @@
 # Hi, I'm Lautaro 👋
 
 ### Software Developer · Systems Engineering Student · Product & Automation
-
-I design and build digital solutions that transform **business opportunities, operational problems and ideas into scalable products, processes and experiences.**
-
-My work sits at the intersection of **technology, product, automation and business**.
-
+  <img src="./assets/about.svg">
+</a>
 ---
 
 ## This is me
