@@ -5,6 +5,7 @@
 <br>
 
 <!-- NAME / TAGLINE - animated typing -->
+# Hi, I'm Lautaro 👋
 <a href="https://github.com/Lautarolecube">
   <img src="./assets/header.svg">
 </a>
@@ -13,11 +14,9 @@
 
 </div>
 
-# Hi, I'm Lautaro 👋
 
   <img src="./assets/about.svg">
 </a>
----
 
 ## This is me
 
