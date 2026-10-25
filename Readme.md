@@ -8,19 +8,14 @@
   <img src="assets/banner-dark.v9.svg" width="100%" alt="profile.sh --live">
 </picture>
 
+
+
 <br>
 
 <!-- NAME / TAGLINE - animated typing -->
 <a href="https://github.com/Lautarolecube">
-  <img src="./assets/about.svg">
+  <img src="./assets/header.svg">
 </a>
-
-<br>
-
-<!-- SOCIALS — LinkedIn stays brand blue (glyph vanishes on custom fills). Others themed. -->
-<a href="https://www.linkedin.com/in/lautaro-l%C3%B3pez-lecube-7a9b3a25b/?isSelfProfile=true"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>&nbsp;&nbsp;
-<a href="https://instagram.com/lautarolopezlecube"><img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=aa9bef" alt="Instagram"></a>&nbsp;&nbsp;
-<a href="https://x.com/emmcriptada"><img src="https://img.shields.io/badge/X-0d1117?style=for-the-badge&logo=x&logoColor=aa9bef" alt="X"></a>
 
 <br>
 
@@ -172,7 +167,7 @@ Built with:
 
 I like building products with a simple principle:
 
-**Understand the problem → design the system → automate what makes sense → measure the result → improve.**
+**Understand the problem → design the system → automate what makes sense → measure the result → optimize.**
 
 ---
 
@@ -188,7 +183,10 @@ I'm always interested in conversations around:
 
 **Software · Product · Automation · AI · Digital Business · Entrepreneurship**
 
-[Portfolio](YOUR_PORTFOLIO_URL) · [LinkedIn](YOUR_LINKEDIN_URL) · [Email](mailto:YOUR_EMAIL)
+<a href="https://github.com/Lautarolecube">
+  <img src="./assets/footer.svg">
+</a>
+
 
 ---
 
