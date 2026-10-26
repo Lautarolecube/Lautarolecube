@@ -50,7 +50,7 @@ Technology, product, automation, and business are one system. The diagram names 
 
 </div>
 
-## Featured work
+## Projects and Open Source
 
 ### [proyecto-individual-TS](https://github.com/Lautarolecube/proyecto-individual-TS)
 
