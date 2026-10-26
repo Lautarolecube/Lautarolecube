@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img src="assets/hero-dark.svg" width="100%" alt="Lautaro Lopez Lecube, Software Developer.">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.gif">
+  <img src="assets/hero-dark.gif" width="100%" alt="Lautaro Lopez Lecube, Software Developer.">
 </picture>
 
 </div>
@@ -65,6 +65,7 @@ Java model of an email manager. A message carries subject, body, sender, and con
 `Java`
 
 ## Contact
+
 
 <!-- contact:start -->
 <div align="center">

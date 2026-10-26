@@ -8,7 +8,7 @@ Desde esta carpeta:
 npm run generate
 ```
 
-El script no tiene dependencias. Reescribe `assets/hero-*.svg`, `assets/about-*.svg`, `assets/pillars-*.svg`, `assets/stack-*.svg` y `assets/contact-*.svg`. La actividad pública sale de `https://api.github.com/users/Lautarolecube` y de la lista de repositorios. Si esa API no responde y ya existen `assets/activity-dark.svg` y `assets/activity-light.svg`, los deja como están. No completa cifras a mano.
+El generador de las secciones no tiene dependencias. El hero lo arma `python scripts/generate-hero.py` con Pillow, desde `assets/source/portrait.png`. Es un GIF en loop: una banda de luz recorre el retrato y un arco gira en el marco. Reescribe `assets/hero-*.gif`, `assets/about-*.svg`, `assets/pillars-*.svg`, `assets/stack-*.svg` y `assets/contact-*.svg`. La actividad pública sale de `https://api.github.com/users/Lautarolecube` y de la lista de repositorios. Si esa API no responde y ya existen `assets/activity-dark.svg` y `assets/activity-light.svg`, los deja como están. No completa cifras a mano.
 
 ## Qué se puede publicar
 

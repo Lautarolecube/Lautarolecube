@@ -1,3 +1,4 @@
+import { spawnSync } from "node:child_process";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -27,13 +28,6 @@ const themes = {
 
 const mono = "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace";
 const sans = "system-ui, Segoe UI, sans-serif";
-
-const proposal = [
-  "I design and build digital solutions",
-  "that transform opportunities into",
-  "scalable products, processes",
-  "and experiences.",
-];
 
 const about = [
   ["01", "💻 Systems Information Engineering student with a strong focus on software, systems architecture and digital products."],
@@ -124,45 +118,6 @@ function wrap(value, maxChars) {
 function text(x, y, content, { size, fill, family, weight = 500, anchor = "start", spacing = 0, cls = "" }) {
   const extra = cls ? ` class="${cls}"` : "";
   return `<text x="${x}" y="${y}" fill="${fill}" font-family="${family}" font-size="${size}" font-weight="${weight}" letter-spacing="${spacing}" text-anchor="${anchor}"${extra}>${esc(content)}</text>`;
-}
-
-function hero(theme) {
-  const nodes = [
-    [742, 118],
-    [808, 184],
-    [742, 250],
-    [676, 184],
-  ];
-  const spokes = nodes
-    .map(([x, y]) => `<line x1="742" y1="184" x2="${x}" y2="${y}" stroke="${theme.accent}" stroke-width="1.25" class="motion-dash"/>`)
-    .join("");
-  const dots = nodes
-    .map(([x, y]) => `<circle cx="${x}" cy="${y}" r="4.5" fill="${theme.accent}"/>`)
-    .join("");
-  const lines = proposal
-    .map((line, index) => text(32, 214 + index * 32, line, { size: 22, fill: theme.fg, family: sans, weight: 500 }))
-    .join("");
-
-  const body = `
-    ${text(32, 38, "Portfolio", { size: 13, fill: theme.muted, family: mono, spacing: 1.4 })}
-    <circle class="motion-dot" cx="168" cy="33" r="4" fill="${theme.accent}"/>
-    ${text(848, 38, "Argentina  ·  Public", { size: 13, fill: theme.accent, family: mono, spacing: 1.2, anchor: "end" })}
-    <line x1="32" y1="56" x2="848" y2="56" stroke="${theme.line}"/>
-    ${text(32, 112, "Lautaro Lopez Lecube", { size: 40, fill: theme.fg, family: sans, weight: 650 })}
-    ${text(32, 146, "SOFTWARE DEVELOPER", { size: 16, fill: theme.accent, family: mono, spacing: 1.6 })}
-    ${lines}
-    <g>
-      <circle cx="742" cy="184" r="36" fill="none" stroke="${theme.accent}" stroke-width="1.25" class="motion-dash"/>
-      ${spokes}
-      <circle cx="742" cy="184" r="3" fill="${theme.fg}"/>
-      ${dots}
-    </g>
-    <line x1="32" y1="356" x2="848" y2="356" stroke="${theme.line}"/>
-    ${text(32, 382, "ready", { size: 14, fill: theme.muted, family: mono })}
-    <rect class="motion-cursor" x="84" y="370" width="8" height="14" fill="${theme.accent}"/>
-  `;
-
-  return documentSvg(404, theme, body);
 }
 
 function aboutSvg(theme) {
@@ -346,8 +301,18 @@ function writeAsset(name, contents) {
   console.log(`${name}  ${bytes} bytes`);
 }
 
+const hero = spawnSync("python", ["scripts/generate-hero.py"], { cwd: root, stdio: "inherit" });
+if (hero.status !== 0) {
+  const dark = join(assets, "hero-dark.gif");
+  const light = join(assets, "hero-light.gif");
+  if (existsSync(dark) && existsSync(light)) {
+    console.log("hero kept previous files");
+  } else {
+    throw new Error("hero failed");
+  }
+}
+
 for (const [name, theme] of Object.entries(themes)) {
-  writeAsset(`hero-${name}.svg`, hero(theme));
   writeAsset(`about-${name}.svg`, aboutSvg(theme));
   writeAsset(`pillars-${name}.svg`, pillarsSvg(theme));
   writeAsset(`stack-${name}.svg`, stackSvg(theme));
