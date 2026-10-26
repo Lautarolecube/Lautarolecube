@@ -159,23 +159,10 @@ I like building products with a simple principle:
 ---
 ## Stats
 
-<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/header.svg" width="100%" alt="Quaint">
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/about.svg" width="100%" alt="Quaint About">
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/skills.svg" width="100%" alt="Quaint Inventory">
-
-<br/>
 
 <img src="https://ryme.md/api/render/pixelfarm-github-stats?u=Lautarolecube&bg=f4e4bc&fg=3d2818&accent=d04a30&muted=7a4a23" width="100%" alt="Quaint Stats">
 
-<br/>
 
-<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/footer.svg" width="100%" alt="Quaint Friendship">
 
 ## Let's connect
 
