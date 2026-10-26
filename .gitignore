@@ -1,4 +1,5 @@
 MAINTENANCE.md
 .github/workflows/update-readme.yml
-.assets/source/portrait.png
-.gitignore
+assets/source/portrait.png
+scripts/__pycache__/
+*.pyc
