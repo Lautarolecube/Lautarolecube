@@ -83,11 +83,11 @@ Java model of an email manager. A message carries subject, body, sender, and con
     <img src="assets/contact-github-dark.svg" width="100%" alt="GitHub, github.com/Lautarolecube">
   </picture>
 </a>
-<a href="mailto:lautarolecube@gmail.com">
+<a href="mailto:lautalecube@gmail.com">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/contact-email-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/contact-email-light.svg">
-    <img src="assets/contact-email-dark.svg" width="100%" alt="Email, lautarolecube@gmail.com">
+    <img src="assets/contact-email-dark.svg" width="100%" alt="Email, lautalecube@gmail.com">
   </picture>
 </a>
 </div>

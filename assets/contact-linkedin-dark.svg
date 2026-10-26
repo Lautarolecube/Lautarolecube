@@ -11,12 +11,12 @@
       .motion-dash, .motion-dot, .motion-cursor { animation: none; }
     }
   </style>
-  <rect width="880" height="108" fill="#080B12"/>
+  <rect width="880" height="108" fill="#05060A"/>
   
   
-    <rect x="24" y="0.5" width="832" height="96" fill="#101827" stroke="#243044"/>
-    <text x="46" y="36" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">01</text>
-    <text x="102" y="40" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="640" letter-spacing="0" text-anchor="start">LinkedIn</text>
-    <text x="102" y="70" fill="#74829B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="500" letter-spacing="0" text-anchor="start">www.linkedin.com/in/lautarolecube</text>
+    <rect x="12" y="4" width="856" height="100" fill="#1A4DFF"/><rect x="14" y="6" width="852" height="2" fill="#5C86FF"/><rect x="14" y="6" width="2" height="96" fill="#5C86FF"/><rect x="18" y="10" width="844" height="88" fill="#070B16"/><rect x="20" y="12" width="840" height="84" fill="#10182A"/>
+    <text x="46" y="36" fill="#F6D43A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">01</text>
+    <text x="102" y="40" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="640" letter-spacing="0" text-anchor="start">LinkedIn</text>
+    <text x="102" y="70" fill="#8B97B3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="500" letter-spacing="0" text-anchor="start">www.linkedin.com/in/lautaro-lópez-lecube-7a9b3a25b</text>
   
 </svg>

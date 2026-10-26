@@ -11,31 +11,31 @@
       .motion-dash, .motion-dot, .motion-cursor { animation: none; }
     }
   </style>
-  <rect width="880" height="400" fill="#F4F7FB"/>
-  <rect x="0.5" y="0.5" width="879" height="399" fill="none" stroke="#D3DCE8"/>
+  <rect width="880" height="400" fill="#EEF2FA"/>
+  <rect x="0" y="0" width="880" height="400" fill="#1A4DFF"/><rect x="2" y="2" width="876" height="2" fill="#6E97FF"/><rect x="2" y="2" width="2" height="396" fill="#6E97FF"/><rect x="6" y="6" width="868" height="388" fill="#12306E"/><rect x="8" y="8" width="864" height="384" fill="#FFFFFF"/>
   
     <text x="24" y="36" fill="#5C6B82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="500" letter-spacing="0.6" text-anchor="start">TECHNOLOGY  ×  PRODUCT  ×  AUTOMATION  ×  BUSINESS</text>
-    <line x1="430" y1="224" x2="450" y2="224" stroke="#3478F6" stroke-width="1.5"/>
-    <line x1="440" y1="214" x2="440" y2="234" stroke="#3478F6" stroke-width="1.5"/>
-    <circle class="motion-dot" cx="440" cy="224" r="2.5" fill="#3478F6"/>
+    <line x1="430" y1="224" x2="450" y2="224" stroke="#C89600" stroke-width="1.5"/>
+    <line x1="440" y1="214" x2="440" y2="234" stroke="#C89600" stroke-width="1.5"/>
+    <circle class="motion-dot" cx="440" cy="224" r="2.5" fill="#C89600"/>
     
-      <rect x="24" y="64" width="406" height="150" fill="#FFFFFF" stroke="#D3DCE8"/>
-      <text x="46" y="100" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">01</text>
+      <rect x="24" y="64" width="406" height="150" fill="#1A4DFF"/><rect x="26" y="66" width="402" height="2" fill="#6E97FF"/><rect x="26" y="66" width="2" height="146" fill="#6E97FF"/><rect x="30" y="70" width="394" height="138" fill="#12306E"/><rect x="32" y="72" width="390" height="134" fill="#FFFFFF"/>
+      <text x="46" y="100" fill="#C89600" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">01</text>
       <text x="46" y="132" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="28" font-weight="640" letter-spacing="0" text-anchor="start">Technology</text>
       <text x="46" y="160" fill="#5C6B82" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">Software engineering</text><text x="46" y="184" fill="#5C6B82" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">and architecture</text>
     
-      <rect x="450" y="64" width="406" height="150" fill="#FFFFFF" stroke="#D3DCE8"/>
-      <text x="472" y="100" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">02</text>
+      <rect x="450" y="64" width="406" height="150" fill="#1A4DFF"/><rect x="452" y="66" width="402" height="2" fill="#6E97FF"/><rect x="452" y="66" width="2" height="146" fill="#6E97FF"/><rect x="456" y="70" width="394" height="138" fill="#12306E"/><rect x="458" y="72" width="390" height="134" fill="#FFFFFF"/>
+      <text x="472" y="100" fill="#C89600" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">02</text>
       <text x="472" y="132" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="28" font-weight="640" letter-spacing="0" text-anchor="start">Product</text>
       <text x="472" y="160" fill="#5C6B82" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">Digital products and</text><text x="472" y="184" fill="#5C6B82" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">product engineering</text>
     
-      <rect x="24" y="234" width="406" height="150" fill="#FFFFFF" stroke="#D3DCE8"/>
-      <text x="46" y="270" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">03</text>
+      <rect x="24" y="234" width="406" height="150" fill="#1A4DFF"/><rect x="26" y="236" width="402" height="2" fill="#6E97FF"/><rect x="26" y="236" width="2" height="146" fill="#6E97FF"/><rect x="30" y="240" width="394" height="138" fill="#12306E"/><rect x="32" y="242" width="390" height="134" fill="#FFFFFF"/>
+      <text x="46" y="270" fill="#C89600" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">03</text>
       <text x="46" y="302" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="28" font-weight="640" letter-spacing="0" text-anchor="start">Automation</text>
       <text x="46" y="330" fill="#5C6B82" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">Workflows, integrations,</text><text x="46" y="354" fill="#5C6B82" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">and event-driven systems</text>
     
-      <rect x="450" y="234" width="406" height="150" fill="#FFFFFF" stroke="#D3DCE8"/>
-      <text x="472" y="270" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">04</text>
+      <rect x="450" y="234" width="406" height="150" fill="#1A4DFF"/><rect x="452" y="236" width="402" height="2" fill="#6E97FF"/><rect x="452" y="236" width="2" height="146" fill="#6E97FF"/><rect x="456" y="240" width="394" height="138" fill="#12306E"/><rect x="458" y="242" width="390" height="134" fill="#FFFFFF"/>
+      <text x="472" y="270" fill="#C89600" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">04</text>
       <text x="472" y="302" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="28" font-weight="640" letter-spacing="0" text-anchor="start">Business</text>
       <text x="472" y="330" fill="#5C6B82" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">Digital business and</text><text x="472" y="354" fill="#5C6B82" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">entrepreneurship</text>
     

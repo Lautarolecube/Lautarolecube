@@ -11,17 +11,17 @@
       .motion-dash, .motion-dot, .motion-cursor { animation: none; }
     }
   </style>
-  <rect width="880" height="256" fill="#080B12"/>
-  <rect x="0.5" y="0.5" width="879" height="255" fill="none" stroke="#243044"/>
+  <rect width="880" height="256" fill="#05060A"/>
+  <rect x="0" y="0" width="880" height="256" fill="#1A4DFF"/><rect x="2" y="2" width="876" height="2" fill="#5C86FF"/><rect x="2" y="2" width="2" height="252" fill="#5C86FF"/><rect x="6" y="6" width="868" height="244" fill="#070B16"/><rect x="8" y="8" width="864" height="240" fill="#10182A"/>
   
-    <text x="32" y="40" fill="#74829B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.4" text-anchor="start">PUBLIC ACTIVITY</text>
-    <text x="848" y="40" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="end">SNAPSHOT</text>
-    <line x1="32" y1="56" x2="848" y2="56" stroke="#243044"/>
-    <text x="32" y="118" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="48" font-weight="650" letter-spacing="0" text-anchor="start">19</text>
-    <text x="32" y="148" fill="#74829B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">PUBLIC REPOS</text>
-    <text x="320" y="118" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="36" font-weight="640" letter-spacing="0" text-anchor="start">2024-11-10</text>
-    <text x="320" y="148" fill="#74829B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">SINCE</text>
-    <text x="32" y="196" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="20" font-weight="560" letter-spacing="0" text-anchor="start">Java 5   ·   Python 2   ·   JavaScript 1   ·   MDX 1   ·   TypeScript 1</text>
-    <text x="32" y="226" fill="#74829B" font-family="system-ui, Segoe UI, sans-serif" font-size="14" font-weight="500" letter-spacing="0" text-anchor="start">Primary language of public repositories, forks excluded.</text>
+    <text x="32" y="40" fill="#8B97B3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.4" text-anchor="start">PUBLIC ACTIVITY</text>
+    <text x="848" y="40" fill="#F6D43A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="end">SNAPSHOT</text>
+    <line x1="32" y1="56" x2="848" y2="56" stroke="#1A4DFF"/>
+    <text x="32" y="118" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="48" font-weight="650" letter-spacing="0" text-anchor="start">19</text>
+    <text x="32" y="148" fill="#8B97B3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">PUBLIC REPOS</text>
+    <text x="320" y="118" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="36" font-weight="640" letter-spacing="0" text-anchor="start">2024-11-10</text>
+    <text x="320" y="148" fill="#8B97B3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">SINCE</text>
+    <text x="32" y="196" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="20" font-weight="560" letter-spacing="0" text-anchor="start">Java 5   ·   Python 2   ·   JavaScript 1   ·   MDX 1   ·   TypeScript 1</text>
+    <text x="32" y="226" fill="#8B97B3" font-family="system-ui, Segoe UI, sans-serif" font-size="14" font-weight="500" letter-spacing="0" text-anchor="start">Primary language of public repositories, forks excluded.</text>
   
 </svg>

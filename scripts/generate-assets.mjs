@@ -9,20 +9,24 @@ const width = 880;
 
 const themes = {
   dark: {
-    bg: "#080B12",
-    surface: "#101827",
-    fg: "#E7EEF9",
-    accent: "#3478F6",
-    muted: "#74829B",
-    line: "#243044",
+    bg: "#05060A",
+    surface: "#10182A",
+    fg: "#F4F7FF",
+    accent: "#F6D43A",
+    muted: "#8B97B3",
+    line: "#1A4DFF",
+    wallHi: "#5C86FF",
+    ink: "#070B16",
   },
   light: {
-    bg: "#F4F7FB",
+    bg: "#EEF2FA",
     surface: "#FFFFFF",
     fg: "#101827",
-    accent: "#3478F6",
+    accent: "#C89600",
     muted: "#5C6B82",
-    line: "#D3DCE8",
+    line: "#1A4DFF",
+    wallHi: "#6E97FF",
+    ink: "#12306E",
   },
 };
 
@@ -63,7 +67,7 @@ const stack = [
 const contact = [
   ["01", "LinkedIn", "https://www.linkedin.com/in/lautaro-lópez-lecube-7a9b3a25b/"],
   ["02", "GitHub", "https://github.com/Lautarolecube"],
-  ["03", "Email", "mailto:lautarolecube@gmail.com"],
+  ["03", "Email", "mailto:lautalecube@gmail.com"],
 ];
 
 function esc(value) {
@@ -74,10 +78,18 @@ function esc(value) {
     .replaceAll('"', "&quot;");
 }
 
+function pixelWindow(x, y, w, h, theme) {
+  return [
+    `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${theme.line}"/>`,
+    `<rect x="${x + 2}" y="${y + 2}" width="${w - 4}" height="2" fill="${theme.wallHi}"/>`,
+    `<rect x="${x + 2}" y="${y + 2}" width="2" height="${h - 4}" fill="${theme.wallHi}"/>`,
+    `<rect x="${x + 6}" y="${y + 6}" width="${w - 12}" height="${h - 12}" fill="${theme.ink}"/>`,
+    `<rect x="${x + 8}" y="${y + 8}" width="${w - 16}" height="${h - 16}" fill="${theme.surface}"/>`,
+  ].join("");
+}
+
 function documentSvg(height, theme, body, { frame = true } = {}) {
-  const border = frame
-    ? `<rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" fill="none" stroke="${theme.line}"/>`
-    : "";
+  const border = frame ? pixelWindow(0, 0, width, height, theme) : "";
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img">
   <style>
@@ -131,7 +143,7 @@ function aboutSvg(theme) {
       .map((line, index) => text(cardX + 78, y + 36 + index * 28, line, { size: 18, fill: theme.fg, family: sans }))
       .join("");
     const block = `
-      <rect x="${cardX}" y="${y}" width="${cardW}" height="${height}" fill="${theme.surface}" stroke="${theme.line}"/>
+      ${pixelWindow(cardX, y, cardW, height, theme)}
       ${text(cardX + 22, y + 36, code, { size: 13, fill: theme.accent, family: mono, spacing: 1.2 })}
       ${copy}
     `;
@@ -163,7 +175,7 @@ function pillarsSvg(theme) {
       .map((line, lineIndex) => text(x + 22, y + 96 + lineIndex * 24, line, { size: 18, fill: theme.muted, family: sans }))
       .join("");
     return `
-      <rect x="${x}" y="${y}" width="${cardW}" height="${cardH}" fill="${theme.surface}" stroke="${theme.line}"/>
+      ${pixelWindow(x, y, cardW, cardH, theme)}
       ${text(x + 22, y + 36, code, { size: 13, fill: theme.accent, family: mono, spacing: 1.2 })}
       ${text(x + 22, y + 68, title, { size: 28, fill: theme.fg, family: sans, weight: 640 })}
       ${copy}
@@ -186,7 +198,7 @@ function stackSvg(theme) {
   const bands = stack.map(([label, lines]) => {
     const height = 36 + lines.length * 30 + 18;
     const block = `
-      <rect x="24" y="${y}" width="832" height="${height}" fill="${theme.surface}" stroke="${theme.line}"/>
+      ${pixelWindow(24, y, 832, height, theme)}
       ${text(44, y + 28, label.toUpperCase(), { size: 13, fill: theme.accent, family: mono, spacing: 1.3 })}
       ${lines.map((line, index) => text(44, y + 58 + index * 30, line, { size: 22, fill: theme.fg, family: sans, weight: 560 })).join("")}
     `;
@@ -208,7 +220,7 @@ function contactSlug(label) {
 
 function contactCardSvg(theme, code, label, href) {
   const body = `
-    <rect x="24" y="0.5" width="832" height="96" fill="${theme.surface}" stroke="${theme.line}"/>
+    ${pixelWindow(12, 4, 856, 100, theme)}
     ${text(46, 36, code, { size: 13, fill: theme.accent, family: mono, spacing: 1.2 })}
     ${text(102, 40, label, { size: 22, fill: theme.fg, family: sans, weight: 640 })}
     ${text(102, 70, contactHrefText(href), { size: 16, fill: theme.muted, family: mono })}

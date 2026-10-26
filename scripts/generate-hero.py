@@ -21,18 +21,24 @@ SCALE = 2
 
 THEMES = {
     "dark": {
-        "bg": "#080B12",
-        "fg": "#E7EEF9",
-        "accent": "#3478F6",
-        "muted": "#74829B",
-        "line": "#243044",
+        "bg": "#05060A",
+        "fg": "#F4F7FF",
+        "accent": "#F6D43A",
+        "muted": "#8B97B3",
+        "line": "#1A4DFF",
+        "wallHi": "#5C86FF",
+        "ink": "#070B16",
+        "ready": "#3DDC6A",
     },
     "light": {
-        "bg": "#F4F7FB",
+        "bg": "#EEF2FA",
         "fg": "#101827",
-        "accent": "#3478F6",
+        "accent": "#C89600",
         "muted": "#5C6B82",
-        "line": "#D3DCE8",
+        "line": "#1A4DFF",
+        "wallHi": "#6E97FF",
+        "ink": "#12306E",
+        "ready": "#1F9D4E",
     },
 }
 
@@ -97,13 +103,13 @@ def portrait_dots(theme_name, grid, frame):
         if dark:
             tone = lum_n ** 1.05
             radius = (0.16 + 0.84 * tone) * cell * 0.47 * feather
-            fill = mix(accent, fg, 0.22 + 0.78 * lum_n)
+            fill = mix(hex_to_rgb(theme["line"]), fg, 0.22 + 0.78 * lum_n)
         else:
             tone = (1 - lum_n) ** 0.72
             radius = (0.1 + 0.9 * tone) * cell * 0.46 * feather
-            fill = mix(accent, fg, min(1, 0.12 + tone * 0.9))
+            fill = mix(hex_to_rgb(theme["line"]), fg, min(1, 0.12 + tone * 0.9))
         radius *= 1 + 0.42 * band
-        fill = mix(fill, fg if dark else accent, 0.72 * band)
+        fill = mix(fill, accent, 0.72 * band)
         if radius < 0.34:
             continue
         dots.append((CX + nx * RADIUS, CY + ny * RADIUS, radius, fill))
@@ -114,7 +120,10 @@ def render_frame(theme_name, grid, frame):
     theme = {key: hex_to_rgb(value) for key, value in THEMES[theme_name].items()}
     image = Image.new("RGB", (WIDTH * SCALE, HEIGHT * SCALE), theme["bg"])
     draw = ImageDraw.Draw(image)
-    draw.rectangle((0, 0, WIDTH * SCALE - 1, HEIGHT * SCALE - 1), outline=theme["line"])
+    band = 6 * SCALE
+    draw.rectangle((0, 0, WIDTH * SCALE - 1, HEIGHT * SCALE - 1), outline=theme["line"], width=band)
+    draw.rectangle((2 * SCALE, 2 * SCALE, WIDTH * SCALE - 1 - 2 * SCALE, 4 * SCALE), fill=theme["wallHi"])
+    draw.rectangle((2 * SCALE, 2 * SCALE, 4 * SCALE, HEIGHT * SCALE - 1 - 2 * SCALE), fill=theme["wallHi"])
 
     def pt(value):
         return value * SCALE
@@ -143,7 +152,7 @@ def render_frame(theme_name, grid, frame):
     draw.ellipse(
         (pt(CX - RADIUS), pt(CY - RADIUS), pt(CX + RADIUS), pt(CY + RADIUS)),
         outline=theme["line"],
-        width=SCALE,
+        width=4 * SCALE,
     )
     sweep = frame / FRAMES * 360
     draw.arc(
@@ -162,7 +171,7 @@ def render_frame(theme_name, grid, frame):
         draw.line((pt(x1), pt(y1), pt(x2), pt(y2)), fill=theme["accent"], width=SCALE)
 
     draw.line((pt(32), pt(356), pt(848), pt(356)), fill=theme["line"], width=SCALE)
-    draw.text((pt(32), pt(382)), "ready", font=ready, fill=theme["muted"], anchor="ls")
+    draw.text((pt(32), pt(382)), "ready", font=ready, fill=theme["ready"], anchor="ls")
     if frame % 6 == 0:
         draw.rectangle((pt(84), pt(370), pt(92), pt(384)), fill=theme["accent"])
     return image.resize((WIDTH, HEIGHT), Image.Resampling.LANCZOS)

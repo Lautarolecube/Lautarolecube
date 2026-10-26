@@ -11,37 +11,37 @@
       .motion-dash, .motion-dot, .motion-cursor { animation: none; }
     }
   </style>
-  <rect width="880" height="852" fill="#F4F7FB"/>
-  <rect x="0.5" y="0.5" width="879" height="851" fill="none" stroke="#D3DCE8"/>
+  <rect width="880" height="852" fill="#EEF2FA"/>
+  <rect x="0" y="0" width="880" height="852" fill="#1A4DFF"/><rect x="2" y="2" width="876" height="2" fill="#6E97FF"/><rect x="2" y="2" width="2" height="848" fill="#6E97FF"/><rect x="6" y="6" width="868" height="840" fill="#12306E"/><rect x="8" y="8" width="864" height="836" fill="#FFFFFF"/>
   
     <text x="24" y="36" fill="#5C6B82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.4" text-anchor="start">WHO I AM</text>
     
-      <rect x="24" y="56" width="832" height="96" fill="#FFFFFF" stroke="#D3DCE8"/>
-      <text x="46" y="92" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">01</text>
+      <rect x="24" y="56" width="832" height="96" fill="#1A4DFF"/><rect x="26" y="58" width="828" height="2" fill="#6E97FF"/><rect x="26" y="58" width="2" height="92" fill="#6E97FF"/><rect x="30" y="62" width="820" height="84" fill="#12306E"/><rect x="32" y="64" width="816" height="80" fill="#FFFFFF"/>
+      <text x="46" y="92" fill="#C89600" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">01</text>
       <text x="102" y="92" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">💻 Systems Information Engineering student with a strong focus on</text><text x="102" y="120" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">software, systems architecture and digital products.</text>
     
-      <rect x="24" y="164" width="832" height="124" fill="#FFFFFF" stroke="#D3DCE8"/>
-      <text x="46" y="200" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">02</text>
+      <rect x="24" y="164" width="832" height="124" fill="#1A4DFF"/><rect x="26" y="166" width="828" height="2" fill="#6E97FF"/><rect x="26" y="166" width="2" height="120" fill="#6E97FF"/><rect x="30" y="170" width="820" height="112" fill="#12306E"/><rect x="32" y="172" width="816" height="108" fill="#FFFFFF"/>
+      <text x="46" y="200" fill="#C89600" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">02</text>
       <text x="102" y="200" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">🚀 I build solutions that combine frontend, backend, integrations,</text><text x="102" y="228" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">automation and business logic instead of treating technology as an</text><text x="102" y="256" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">isolated layer.</text>
     
-      <rect x="24" y="300" width="832" height="124" fill="#FFFFFF" stroke="#D3DCE8"/>
-      <text x="46" y="336" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">03</text>
+      <rect x="24" y="300" width="832" height="124" fill="#1A4DFF"/><rect x="26" y="302" width="828" height="2" fill="#6E97FF"/><rect x="26" y="302" width="2" height="120" fill="#6E97FF"/><rect x="30" y="306" width="820" height="112" fill="#12306E"/><rect x="32" y="308" width="816" height="108" fill="#FFFFFF"/>
+      <text x="46" y="336" fill="#C89600" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">03</text>
       <text x="102" y="336" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">⚙️ Currently working with digital operations, integrations, order</text><text x="102" y="364" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">flows, automation and operational monitoring in e-commerce</text><text x="102" y="392" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">environments.</text>
     
-      <rect x="24" y="436" width="832" height="96" fill="#FFFFFF" stroke="#D3DCE8"/>
-      <text x="46" y="472" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">04</text>
+      <rect x="24" y="436" width="832" height="96" fill="#1A4DFF"/><rect x="26" y="438" width="828" height="2" fill="#6E97FF"/><rect x="26" y="438" width="2" height="92" fill="#6E97FF"/><rect x="30" y="442" width="820" height="84" fill="#12306E"/><rect x="32" y="444" width="816" height="80" fill="#FFFFFF"/>
+      <text x="46" y="472" fill="#C89600" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">04</text>
       <text x="102" y="472" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">🧠 Interested in Artificial Intelligence, automation, software</text><text x="102" y="500" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">engineering, product development and digital business.</text>
     
-      <rect x="24" y="544" width="832" height="96" fill="#FFFFFF" stroke="#D3DCE8"/>
-      <text x="46" y="580" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">05</text>
+      <rect x="24" y="544" width="832" height="96" fill="#1A4DFF"/><rect x="26" y="546" width="828" height="2" fill="#6E97FF"/><rect x="26" y="546" width="2" height="92" fill="#6E97FF"/><rect x="30" y="550" width="820" height="84" fill="#12306E"/><rect x="32" y="552" width="816" height="80" fill="#FFFFFF"/>
+      <text x="46" y="580" fill="#C89600" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">05</text>
       <text x="102" y="580" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">📊 I enjoy turning complex operations into observable systems,</text><text x="102" y="608" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">dashboards, workflows and measurable processes.</text>
     
-      <rect x="24" y="652" width="832" height="96" fill="#FFFFFF" stroke="#D3DCE8"/>
-      <text x="46" y="688" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">06</text>
+      <rect x="24" y="652" width="832" height="96" fill="#1A4DFF"/><rect x="26" y="654" width="828" height="2" fill="#6E97FF"/><rect x="26" y="654" width="2" height="92" fill="#6E97FF"/><rect x="30" y="658" width="820" height="84" fill="#12306E"/><rect x="32" y="660" width="816" height="80" fill="#FFFFFF"/>
+      <text x="46" y="688" fill="#C89600" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">06</text>
       <text x="102" y="688" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">🧩 I like working on problems where technology meets real business</text><text x="102" y="716" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">constraints.</text>
     
-      <rect x="24" y="760" width="832" height="68" fill="#FFFFFF" stroke="#D3DCE8"/>
-      <text x="46" y="796" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">07</text>
+      <rect x="24" y="760" width="832" height="68" fill="#1A4DFF"/><rect x="26" y="762" width="828" height="2" fill="#6E97FF"/><rect x="26" y="762" width="2" height="64" fill="#6E97FF"/><rect x="30" y="766" width="820" height="56" fill="#12306E"/><rect x="32" y="768" width="816" height="52" fill="#FFFFFF"/>
+      <text x="46" y="796" fill="#C89600" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">07</text>
       <text x="102" y="796" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">🌎 Building from Argentina, thinking globally.</text>
     
   

@@ -11,27 +11,27 @@
       .motion-dash, .motion-dot, .motion-cursor { animation: none; }
     }
   </style>
-  <rect width="880" height="648" fill="#080B12"/>
-  <rect x="0.5" y="0.5" width="879" height="647" fill="none" stroke="#243044"/>
+  <rect width="880" height="648" fill="#05060A"/>
+  <rect x="0" y="0" width="880" height="648" fill="#1A4DFF"/><rect x="2" y="2" width="876" height="2" fill="#5C86FF"/><rect x="2" y="2" width="2" height="644" fill="#5C86FF"/><rect x="6" y="6" width="868" height="636" fill="#070B16"/><rect x="8" y="8" width="864" height="632" fill="#10182A"/>
   
-      <rect x="24" y="28" width="832" height="144" fill="#101827" stroke="#243044"/>
-      <text x="44" y="56" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.3" text-anchor="start">FRONTEND</text>
-      <text x="44" y="86" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">React   ·   TypeScript   ·   Tailwind CSS</text><text x="44" y="116" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">shadcn/ui   ·   GSAP   ·   Framer Motion</text><text x="44" y="146" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">Three.js   ·   R3F</text>
+      <rect x="24" y="28" width="832" height="144" fill="#1A4DFF"/><rect x="26" y="30" width="828" height="2" fill="#5C86FF"/><rect x="26" y="30" width="2" height="140" fill="#5C86FF"/><rect x="30" y="34" width="820" height="132" fill="#070B16"/><rect x="32" y="36" width="816" height="128" fill="#10182A"/>
+      <text x="44" y="56" fill="#F6D43A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.3" text-anchor="start">FRONTEND</text>
+      <text x="44" y="86" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">React   ·   TypeScript   ·   Tailwind CSS</text><text x="44" y="116" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">shadcn/ui   ·   GSAP   ·   Framer Motion</text><text x="44" y="146" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">Three.js   ·   R3F</text>
     
-      <rect x="24" y="186" width="832" height="114" fill="#101827" stroke="#243044"/>
-      <text x="44" y="214" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.3" text-anchor="start">BACKEND / DATA</text>
-      <text x="44" y="244" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">Node.js   ·   PostgreSQL   ·   Supabase   ·   MongoDB</text><text x="44" y="274" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">Redis   ·   RabbitMQ   ·   REST APIs</text>
+      <rect x="24" y="186" width="832" height="114" fill="#1A4DFF"/><rect x="26" y="188" width="828" height="2" fill="#5C86FF"/><rect x="26" y="188" width="2" height="110" fill="#5C86FF"/><rect x="30" y="192" width="820" height="102" fill="#070B16"/><rect x="32" y="194" width="816" height="98" fill="#10182A"/>
+      <text x="44" y="214" fill="#F6D43A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.3" text-anchor="start">BACKEND / DATA</text>
+      <text x="44" y="244" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">Node.js   ·   PostgreSQL   ·   Supabase   ·   MongoDB</text><text x="44" y="274" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">Redis   ·   RabbitMQ   ·   REST APIs</text>
     
-      <rect x="24" y="314" width="832" height="84" fill="#101827" stroke="#243044"/>
-      <text x="44" y="342" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.3" text-anchor="start">CLOUD</text>
-      <text x="44" y="372" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">AWS   ·   DigitalOcean   ·   Google Cloud</text>
+      <rect x="24" y="314" width="832" height="84" fill="#1A4DFF"/><rect x="26" y="316" width="828" height="2" fill="#5C86FF"/><rect x="26" y="316" width="2" height="80" fill="#5C86FF"/><rect x="30" y="320" width="820" height="72" fill="#070B16"/><rect x="32" y="322" width="816" height="68" fill="#10182A"/>
+      <text x="44" y="342" fill="#F6D43A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.3" text-anchor="start">CLOUD</text>
+      <text x="44" y="372" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">AWS   ·   DigitalOcean   ·   Google Cloud</text>
     
-      <rect x="24" y="412" width="832" height="84" fill="#101827" stroke="#243044"/>
-      <text x="44" y="440" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.3" text-anchor="start">AUTOMATION</text>
-      <text x="44" y="470" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">n8n   ·   Webhooks   · APIs   · Event-driven systems</text>
+      <rect x="24" y="412" width="832" height="84" fill="#1A4DFF"/><rect x="26" y="414" width="828" height="2" fill="#5C86FF"/><rect x="26" y="414" width="2" height="80" fill="#5C86FF"/><rect x="30" y="418" width="820" height="72" fill="#070B16"/><rect x="32" y="420" width="816" height="68" fill="#10182A"/>
+      <text x="44" y="440" fill="#F6D43A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.3" text-anchor="start">AUTOMATION</text>
+      <text x="44" y="470" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">n8n   ·   Webhooks   · APIs   · Event-driven systems</text>
     
-      <rect x="24" y="510" width="832" height="114" fill="#101827" stroke="#243044"/>
-      <text x="44" y="538" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.3" text-anchor="start">TOOLS</text>
-      <text x="44" y="568" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">Git   ·   GitHub   ·   Docker</text><text x="44" y="598" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">Cursor   ·   Figma   ·   Jira</text>
+      <rect x="24" y="510" width="832" height="114" fill="#1A4DFF"/><rect x="26" y="512" width="828" height="2" fill="#5C86FF"/><rect x="26" y="512" width="2" height="110" fill="#5C86FF"/><rect x="30" y="516" width="820" height="102" fill="#070B16"/><rect x="32" y="518" width="816" height="98" fill="#10182A"/>
+      <text x="44" y="538" fill="#F6D43A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.3" text-anchor="start">TOOLS</text>
+      <text x="44" y="568" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">Git   ·   GitHub   ·   Docker</text><text x="44" y="598" fill="#F4F7FF" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="560" letter-spacing="0" text-anchor="start">Cursor   ·   Figma   ·   Jira</text>
     
 </svg>
