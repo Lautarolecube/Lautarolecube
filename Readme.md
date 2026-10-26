@@ -158,23 +158,25 @@ I like building products with a simple principle:
 
 ---
 ## Stats
-<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/header.svg" width="100%" alt="Glass Banner">
+
+<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/header.svg" width="100%" alt="Quaint">
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/about.svg" width="100%" alt="Glass About">
+<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/about.svg" width="100%" alt="Quaint About">
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/skills.svg" width="100%" alt="Glass Stack">
+<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/skills.svg" width="100%" alt="Quaint Inventory">
 
 <br/>
 
-<img src="https://ryme.md/api/render/glass-github-stats?u=Lautarolecube&bg=0b0b12&fg=22d3ee&accent=7c3aed&muted=f472b6" width="100%" alt="Glass GitHub">
+<img src="https://ryme.md/api/render/pixelfarm-github-stats?u=Lautarolecube&bg=f4e4bc&fg=3d2818&accent=d04a30&muted=7a4a23" width="100%" alt="Quaint Stats">
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/footer.svg" width="100%" alt="Glass Sign-off">
+<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/footer.svg" width="100%" alt="Quaint Friendship">
+
 ## Let's connect
 
 I'm always interested in conversations around:
