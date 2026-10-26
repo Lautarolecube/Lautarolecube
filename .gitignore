@@ -1,3 +1,4 @@
 MAINTENANCE.md
 .github/workflows/update-readme.yml
 .assets/source/portrait.png
+.gitignore
