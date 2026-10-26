@@ -36,7 +36,7 @@ const proposal = [
 ];
 
 const about = [
-  ["01", "Systems Information Engineering student with a strong focus on software, systems architecture and digital products."],
+  ["01", "💻 Systems Information Engineering student with a strong focus on software, systems architecture and digital products."],
 
   ["02", "🚀 I build solutions that combine frontend, backend, integrations, automation and business logic instead of treating technology as an isolated layer."],
 
@@ -64,6 +64,12 @@ const stack = [
   ["Cloud", ["AWS   ·   DigitalOcean   ·   Google Cloud"]],
   ["Automation", ["n8n   ·   Webhooks   · APIs   · Event-driven systems"]],
   ["Tools", ["Git   ·   GitHub   ·   Docker", "Cursor   ·   Figma   ·   Jira"]],
+];
+
+const contact = [
+  ["01", "LinkedIn", "https://www.linkedin.com/in/lautarolecube/"],
+  ["02", "GitHub", "https://github.com/Lautarolecube"],
+  ["03", "Email", "mailto:lautarolecube@gmail.com"],
 ];
 
 function esc(value) {
@@ -135,9 +141,9 @@ function hero(theme) {
     .join("");
 
   const body = `
-    ${text(32, 38, "SYS.IDENTITY", { size: 13, fill: theme.muted, family: mono, spacing: 1.4 })}
+    ${text(32, 38, "Portfolio", { size: 13, fill: theme.muted, family: mono, spacing: 1.4 })}
     <circle class="motion-dot" cx="168" cy="33" r="4" fill="${theme.accent}"/>
-    ${text(848, 38, "AR   /   PUBLIC", { size: 13, fill: theme.accent, family: mono, spacing: 1.2, anchor: "end" })}
+    ${text(848, 38, "Argentina  ·  Public", { size: 13, fill: theme.accent, family: mono, spacing: 1.2, anchor: "end" })}
     <line x1="32" y1="56" x2="848" y2="56" stroke="${theme.line}"/>
     ${text(32, 112, "Lautaro Lopez Lecube", { size: 40, fill: theme.fg, family: sans, weight: 650 })}
     ${text(32, 146, "SOFTWARE DEVELOPER", { size: 16, fill: theme.accent, family: mono, spacing: 1.6 })}
@@ -233,6 +239,35 @@ function stackSvg(theme) {
   return documentSvg(y + 10, theme, bands.join(""));
 }
 
+function contactHrefText(href) {
+  if (href.startsWith("mailto:")) return href.slice("mailto:".length);
+  return href.replace(/^https?:\/\//, "").replace(/\/$/, "");
+}
+
+function contactSvg(theme) {
+  const cardX = 24;
+  const cardW = 832;
+  let y = 56;
+  const blocks = contact.map(([code, label, href]) => {
+    const height = 96;
+    const block = `
+      <rect x="${cardX}" y="${y}" width="${cardW}" height="${height}" fill="${theme.surface}" stroke="${theme.line}"/>
+      ${text(cardX + 22, y + 36, code, { size: 13, fill: theme.accent, family: mono, spacing: 1.2 })}
+      ${text(cardX + 78, y + 40, label, { size: 22, fill: theme.fg, family: sans, weight: 640 })}
+      ${text(cardX + 78, y + 70, contactHrefText(href), { size: 16, fill: theme.muted, family: mono })}
+    `;
+    y += height + 12;
+    return block;
+  });
+
+  const body = `
+    ${text(24, 36, "CONTACT", { size: 13, fill: theme.muted, family: mono, spacing: 1.4 })}
+    ${blocks.join("")}
+  `;
+
+  return documentSvg(y + 12, theme, body);
+}
+
 function activitySvg(theme, stats) {
   if (!stats) {
     const body = `
@@ -297,6 +332,7 @@ for (const [name, theme] of Object.entries(themes)) {
   writeAsset(`about-${name}.svg`, aboutSvg(theme));
   writeAsset(`pillars-${name}.svg`, pillarsSvg(theme));
   writeAsset(`stack-${name}.svg`, stackSvg(theme));
+  writeAsset(`contact-${name}.svg`, contactSvg(theme));
 }
 
 let stats = null;

@@ -64,22 +64,16 @@ Java model of an email manager. A message carries subject, body, sender, and con
 
 `Java`
 
-## GitHub activity
+## Contact
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/activity-light.svg">
-  <img src="assets/activity-dark.svg" width="100%" alt="Public GitHub activity snapshot for Lautarolecube.">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/contact-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/contact-light.svg">
+  <img src="assets/contact-dark.svg" width="100%" alt="Contact: LinkedIn, GitHub, and email.">
 </picture>
 
 </div>
 
-The figures are written into the repository by `npm run generate`, from the public GitHub API. If that API fails on a later run, the previous snapshot stays. A third-party stats image is not required for this section to render.
-
-Language counts use the primary language of public repositories and exclude forks.
-
-## Contact
-
-[GitHub](https://github.com/Lautarolecube) · [LinkedIn](https://www.linkedin.com/in/lautaro-l%C3%B3pez-lecube-7a9b3a25b) · [lautalecube@gmail.com](mailto:lautalecube@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/lautarolecube/) · [GitHub](https://github.com/Lautarolecube) · [lautarolecube@gmail.com](mailto:lautarolecube@gmail.com)
