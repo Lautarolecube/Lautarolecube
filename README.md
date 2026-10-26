@@ -68,11 +68,11 @@ Java model of an email manager. A message carries subject, body, sender, and con
 
 <!-- contact:start -->
 <div align="center">
-<a href="https://www.linkedin.com/in/lautarolecube/">
+<a href="https://www.linkedin.com/in/lautaro-lópez-lecube-7a9b3a25b/">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/contact-linkedin-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="assets/contact-linkedin-light.svg">
-    <img src="assets/contact-linkedin-dark.svg" width="100%" alt="LinkedIn, www.linkedin.com/in/lautarolecube">
+    <img src="assets/contact-linkedin-dark.svg" width="100%" alt="LinkedIn, www.linkedin.com/in/lautaro-lópez-lecube-7a9b3a25b">
   </picture>
 </a>
 <a href="https://github.com/Lautarolecube">
