@@ -56,12 +56,52 @@ const pillars = [
   ["04", "Business", ["Digital business and", "entrepreneurship"]],
 ];
 
+const stackIcons = JSON.parse(readFileSync(join(dirname(fileURLToPath(import.meta.url)), "stack-icons.json"), "utf8"));
+
 const stack = [
-  ["Frontend", ["React   ·   TypeScript   ·   Tailwind CSS", "shadcn/ui   ·   GSAP   ·   Framer Motion", "Three.js   ·   R3F"]],
-  ["Backend / Data", ["Node.js   ·   PostgreSQL   ·   Supabase   ·   MongoDB", "Redis   ·   RabbitMQ   ·   REST APIs"]],
-  ["Cloud", ["AWS   ·   DigitalOcean   ·   Google Cloud"]],
-  ["Automation", ["n8n   ·   Webhooks   · APIs   · Event-driven systems"]],
-  ["Tools", ["Git   ·   GitHub   ·   Docker", "Cursor   ·   Figma   ·   Jira"]],
+  ["Frontend", [
+    ["React", "react"],
+    ["Tailwind CSS", "tailwindcss"],
+    ["shadcn/ui", "shadcnui"],
+    ["GSAP", "gsap"],
+    ["Framer Motion", "framer"],
+    ["Three.js", "threedotjs"],
+    ["R3F", "r3f"],
+  ]],
+  ["Backend / Data", [
+    ["TypeScript", "typescript"],
+    ["JavaScript", "javascript"],
+    ["REST APIs", "rest"],
+    ["OpenAPI", "openapiinitiative"],
+    ["Python", "python"],
+    ["Node.js", "nodedotjs"],
+    ["PostgreSQL", "postgresql"],
+    ["Supabase", "supabase"],
+    ["MongoDB", "mongodb"],
+    ["Redis", "redis"],
+    ["RabbitMQ", "rabbitmq"],
+  ]],
+  ["Cloud and OPS", [
+    ["AWS", "aws"],
+    ["DigitalOcean", "digitalocean"],
+    ["Google Cloud", "googlecloud"],
+    ["Docker", "docker"],
+    ["GitHub Actions", "githubactions"],
+  ]],
+  ["Automation", [
+    ["n8n", "n8n"],
+    ["Webhooks", "webhooks"],
+    ["APIs", "apis"],
+    ["Event-driven systems", "events"],
+  ]],
+  ["Tools", [
+    ["Git", "git"],
+    ["GitHub", "github"],
+    ["Bash", "gnubash"],
+    ["Cursor", "cursor"],
+    ["Figma", "figma"],
+    ["Jira", "jira"],
+  ]],
 ];
 
 const contact = [
@@ -193,14 +233,67 @@ function pillarsSvg(theme) {
   return documentSvg(400, theme, body);
 }
 
+function iconFill(hex, theme) {
+  const red = Number.parseInt(hex.slice(0, 2), 16);
+  const green = Number.parseInt(hex.slice(2, 4), 16);
+  const blue = Number.parseInt(hex.slice(4, 6), 16);
+  const luminance = (0.2126 * red + 0.7152 * green + 0.0722 * blue) / 255;
+  return luminance < 0.22 ? theme.fg : `#${hex}`;
+}
+
+function customIcon(kind, theme) {
+  if (kind === "aws") {
+    return `<path d="M6.2 15.4c0-.4 0-.8.1-1.1.3-1.4 1.5-2.5 3-2.8.6-2.3 2.7-4 5.1-4 2.3 0 4.3 1.5 5 3.6 1.8.2 3.2 1.7 3.2 3.5 0 2-1.6 3.5-3.5 3.5H8.6c-1.4 0-2.4-1-2.4-2.7z"/>`;
+  }
+  if (kind === "r3f") {
+    return `<path fill="${theme.accent}" d="M12 3.5 19.5 8 12 12.5 4.5 8Z"/><path fill="${theme.line}" d="M4.5 8 12 12.5 12 20.5 4.5 16Z"/><path fill="${theme.wallHi}" d="M12 12.5 19.5 8 19.5 16 12 20.5Z"/>`;
+  }
+  if (kind === "rest") {
+    return `<rect x="1" y="6" width="8" height="12"/><rect x="15" y="6" width="8" height="12"/><rect x="9" y="10.5" width="6" height="3" fill="${theme.line}"/>`;
+  }
+  if (kind === "webhooks") {
+    return `<rect x="8" y="1" width="7" height="6"/><rect x="8" y="6" width="4" height="9"/><rect x="8" y="15" width="12" height="4"/><rect x="16" y="8" width="4" height="11"/>`;
+  }
+  if (kind === "apis") {
+    return `<rect x="1" y="2" width="4" height="20"/><rect x="1" y="2" width="9" height="4"/><rect x="1" y="18" width="9" height="4"/><rect x="19" y="2" width="4" height="20"/><rect x="14" y="2" width="9" height="4"/><rect x="14" y="18" width="9" height="4"/>`;
+  }
+  if (kind === "events") {
+    return `<rect x="1" y="8" width="6" height="8"/><rect x="9" y="8" width="6" height="8"/><rect x="17" y="8" width="6" height="8"/><rect x="7" y="11" width="2" height="2" fill="${theme.line}"/><rect x="15" y="11" width="2" height="2" fill="${theme.line}"/>`;
+  }
+  return "";
+}
+
+function stackIcon(slug, x, y, size, theme) {
+  const scale = size / 24;
+  const brand = stackIcons[slug];
+  const fill = brand ? iconFill(brand.hex, theme) : theme.accent;
+  const body = brand
+    ? brand.paths.map((path) => `<path d="${esc(path)}"/>`).join("")
+    : customIcon(slug, theme);
+  return `<g transform="translate(${x} ${y}) scale(${scale})" fill="${fill}">${body}</g>`;
+}
+
 function stackSvg(theme) {
   let y = 28;
-  const bands = stack.map(([label, lines]) => {
-    const height = 36 + lines.length * 30 + 18;
+  const rowH = 58;
+  const iconSize = 34;
+  const bands = stack.map(([label, tools]) => {
+    const rows = Math.ceil(tools.length / 2);
+    const height = 46 + rows * rowH + 8;
+    const items = tools.map(([name, slug], index) => {
+      const column = index % 2;
+      const row = Math.floor(index / 2);
+      const iconX = 48 + column * 412;
+      const iconY = y + 48 + row * rowH;
+      return `
+        ${stackIcon(slug, iconX, iconY, iconSize, theme)}
+        ${text(iconX + iconSize + 14, iconY + 24, name, { size: 20, fill: theme.fg, family: sans, weight: 560 })}
+      `;
+    }).join("");
     const block = `
       ${pixelWindow(24, y, 832, height, theme)}
-      ${text(44, y + 28, label.toUpperCase(), { size: 13, fill: theme.accent, family: mono, spacing: 1.3 })}
-      ${lines.map((line, index) => text(44, y + 58 + index * 30, line, { size: 22, fill: theme.fg, family: sans, weight: 560 })).join("")}
+      ${text(48, y + 30, label.toUpperCase(), { size: 13, fill: theme.accent, family: mono, spacing: 1.3 })}
+      ${items}
     `;
     y += height + 14;
     return block;

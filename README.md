@@ -45,7 +45,7 @@ Technology, product, automation, and business are one system. The diagram names 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg">
-  <img src="assets/stack-dark.svg" width="100%" alt="Frontend: React, TypeScript, Tailwind CSS, shadcn/ui, GSAP, Framer Motion, Three.js, R3F. Backend and data: Node.js, PostgreSQL, Supabase, MongoDB, Redis, RabbitMQ, REST APIs. Cloud: AWS, DigitalOcean and Google CLoud. Automation: n8n, Webhooks, APIs, Event-driven systems. Tools: Git, GitHub, Docker, Cursor, Figma, Jira.">
+  <img src="assets/stack-dark.svg" width="100%" alt="Frontend: React, Tailwind CSS, shadcn/ui, GSAP, Framer Motion, Three.js, R3F. Backend and data: Typescript, Javascript, REST APIs, OpenAPI, Python, Node.js, PostgreSQL, Supabase, MongoDB, Redis, RabbitMQ. Cloud and OPS: AWS, DigitalOcean, Google CLoud, Docker, GitHub Actions. Automation: n8n, Webhooks, APIs, Event-driven systems. Tools: Git, GitHub, Bash, Cursor, Figma, Jira.">
 </picture>
 
 </div>
