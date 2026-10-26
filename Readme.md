@@ -7,6 +7,7 @@
 <!-- NAME / TAGLINE - animated typing -->
 # Hi, I'm Lautaro 👋
 <a href="https://github.com/Lautarolecube">
+
   <img src="./assets/header.svg">
 </a>
 
@@ -157,7 +158,24 @@ I like building products with a simple principle:
 **Understand the problem → design the system → automate what makes sense → measure the result → optimize.**
 
 ---
+## Stats
+<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/header.svg" width="100%" alt="Glass Banner">
 
+<br/>
+
+<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/about.svg" width="100%" alt="Glass About">
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/skills.svg" width="100%" alt="Glass Stack">
+
+<br/>
+
+<img src="https://ryme.md/api/render/glass-github-stats?u=Lautarolecube&bg=0b0b12&fg=22d3ee&accent=7c3aed&muted=f472b6" width="100%" alt="Glass GitHub">
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/Lautarolecube/Lautarolecube/main/footer.svg" width="100%" alt="Glass Sign-off">
 ## Let's connect
 
 I'm always interested in conversations around:
