@@ -66,14 +66,28 @@ Java model of an email manager. A message carries subject, body, sender, and con
 
 ## Contact
 
+<!-- contact:start -->
 <div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/contact-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/contact-light.svg">
-  <img src="assets/contact-dark.svg" width="100%" alt="Contact: LinkedIn, GitHub, and email.">
-</picture>
-
+<a href="https://www.linkedin.com/in/lautarolecube/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/contact-linkedin-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/contact-linkedin-light.svg">
+    <img src="assets/contact-linkedin-dark.svg" width="100%" alt="LinkedIn, www.linkedin.com/in/lautarolecube">
+  </picture>
+</a>
+<a href="https://github.com/Lautarolecube">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/contact-github-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/contact-github-light.svg">
+    <img src="assets/contact-github-dark.svg" width="100%" alt="GitHub, github.com/Lautarolecube">
+  </picture>
+</a>
+<a href="mailto:lautarolecube@gmail.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/contact-email-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/contact-email-light.svg">
+    <img src="assets/contact-email-dark.svg" width="100%" alt="Email, lautarolecube@gmail.com">
+  </picture>
+</a>
 </div>
-
-[LinkedIn](https://www.linkedin.com/in/lautarolecube/) · [GitHub](https://github.com/Lautarolecube) · [lautarolecube@gmail.com](mailto:lautarolecube@gmail.com)
+<!-- contact:end -->

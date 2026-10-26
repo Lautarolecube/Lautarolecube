@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="108" viewBox="0 0 880 108" role="img">
+  <style>
+    .motion-dash { stroke-dasharray: 5 7; animation: march 9s linear infinite; }
+    .motion-dot { animation: pulse 2.8s ease-in-out infinite; }
+    .motion-cursor { animation: blink 1.15s steps(1) infinite; }
+    @keyframes march { to { stroke-dashoffset: -96; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+    @keyframes blink { 0%, 45% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .motion-dash, .motion-dot, .motion-cursor { animation: none; }
+    }
+  </style>
+  <rect width="880" height="108" fill="#F4F7FB"/>
+  
+  
+    <rect x="24" y="0.5" width="832" height="96" fill="#FFFFFF" stroke="#D3DCE8"/>
+    <text x="46" y="36" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">02</text>
+    <text x="102" y="40" fill="#101827" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="640" letter-spacing="0" text-anchor="start">GitHub</text>
+    <text x="102" y="70" fill="#5C6B82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="500" letter-spacing="0" text-anchor="start">github.com/Lautarolecube</text>
+  
+</svg>

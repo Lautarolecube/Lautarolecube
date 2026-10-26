@@ -1,4 +1,4 @@
-import { existsSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -67,7 +67,7 @@ const stack = [
 ];
 
 const contact = [
-  ["01", "LinkedIn", "https://www.linkedin.com/in/lautarolecube/"],
+  ["01", "LinkedIn", "https://www.linkedin.com/in/lautaro-lópez-lecube-7a9b3a25b/"],
   ["02", "GitHub", "https://github.com/Lautarolecube"],
   ["03", "Email", "mailto:lautarolecube@gmail.com"],
 ];
@@ -80,7 +80,10 @@ function esc(value) {
     .replaceAll('"', "&quot;");
 }
 
-function documentSvg(height, theme, body) {
+function documentSvg(height, theme, body, { frame = true } = {}) {
+  const border = frame
+    ? `<rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" fill="none" stroke="${theme.line}"/>`
+    : "";
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img">
   <style>
@@ -95,7 +98,7 @@ function documentSvg(height, theme, body) {
     }
   </style>
   <rect width="${width}" height="${height}" fill="${theme.bg}"/>
-  <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" fill="none" stroke="${theme.line}"/>
+  ${border}
   ${body}
 </svg>
 `;
@@ -244,28 +247,44 @@ function contactHrefText(href) {
   return href.replace(/^https?:\/\//, "").replace(/\/$/, "");
 }
 
-function contactSvg(theme) {
-  const cardX = 24;
-  const cardW = 832;
-  let y = 56;
-  const blocks = contact.map(([code, label, href]) => {
-    const height = 96;
-    const block = `
-      <rect x="${cardX}" y="${y}" width="${cardW}" height="${height}" fill="${theme.surface}" stroke="${theme.line}"/>
-      ${text(cardX + 22, y + 36, code, { size: 13, fill: theme.accent, family: mono, spacing: 1.2 })}
-      ${text(cardX + 78, y + 40, label, { size: 22, fill: theme.fg, family: sans, weight: 640 })}
-      ${text(cardX + 78, y + 70, contactHrefText(href), { size: 16, fill: theme.muted, family: mono })}
-    `;
-    y += height + 12;
-    return block;
-  });
+function contactSlug(label) {
+  return label.toLowerCase();
+}
 
+function contactCardSvg(theme, code, label, href) {
   const body = `
-    ${text(24, 36, "CONTACT", { size: 13, fill: theme.muted, family: mono, spacing: 1.4 })}
-    ${blocks.join("")}
+    <rect x="24" y="0.5" width="832" height="96" fill="${theme.surface}" stroke="${theme.line}"/>
+    ${text(46, 36, code, { size: 13, fill: theme.accent, family: mono, spacing: 1.2 })}
+    ${text(102, 40, label, { size: 22, fill: theme.fg, family: sans, weight: 640 })}
+    ${text(102, 70, contactHrefText(href), { size: 16, fill: theme.muted, family: mono })}
   `;
+  return documentSvg(108, theme, body, { frame: false });
+}
 
-  return documentSvg(y + 12, theme, body);
+function contactReadme() {
+  const cards = contact.map(([, label, href]) => {
+    const slug = contactSlug(label);
+    return `<a href="${esc(href)}">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/contact-${slug}-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/contact-${slug}-light.svg">
+    <img src="assets/contact-${slug}-dark.svg" width="100%" alt="${esc(label)}, ${esc(contactHrefText(href))}">
+  </picture>
+</a>`;
+  });
+  return `<div align="center">\n${cards.join("\n")}\n</div>`;
+}
+
+function writeContactReadme() {
+  const readmePath = join(root, "README.md");
+  const readme = readFileSync(readmePath, "utf8");
+  const start = "<!-- contact:start -->";
+  const end = "<!-- contact:end -->";
+  if (!readme.includes(start) || !readme.includes(end)) {
+    throw new Error("README is missing contact markers");
+  }
+  const next = readme.replace(new RegExp(`${start}[\\s\\S]*?${end}`), `${start}\n${contactReadme()}\n${end}`);
+  writeFileSync(readmePath, next);
 }
 
 function activitySvg(theme, stats) {
@@ -332,8 +351,16 @@ for (const [name, theme] of Object.entries(themes)) {
   writeAsset(`about-${name}.svg`, aboutSvg(theme));
   writeAsset(`pillars-${name}.svg`, pillarsSvg(theme));
   writeAsset(`stack-${name}.svg`, stackSvg(theme));
-  writeAsset(`contact-${name}.svg`, contactSvg(theme));
 }
+
+for (const [code, label, href] of contact) {
+  const slug = contactSlug(label);
+  for (const [name, theme] of Object.entries(themes)) {
+    writeAsset(`contact-${slug}-${name}.svg`, contactCardSvg(theme, code, label, href));
+  }
+}
+
+writeContactReadme();
 
 let stats = null;
 try {
