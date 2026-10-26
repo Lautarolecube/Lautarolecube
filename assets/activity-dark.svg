@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="256" viewBox="0 0 880 256" role="img">
+  <style>
+    .motion-dash { stroke-dasharray: 5 7; animation: march 9s linear infinite; }
+    .motion-dot { animation: pulse 2.8s ease-in-out infinite; }
+    .motion-cursor { animation: blink 1.15s steps(1) infinite; }
+    @keyframes march { to { stroke-dashoffset: -96; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+    @keyframes blink { 0%, 45% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .motion-dash, .motion-dot, .motion-cursor { animation: none; }
+    }
+  </style>
+  <rect width="880" height="256" fill="#080B12"/>
+  <rect x="0.5" y="0.5" width="879" height="255" fill="none" stroke="#243044"/>
+  
+    <text x="32" y="40" fill="#74829B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.4" text-anchor="start">PUBLIC ACTIVITY</text>
+    <text x="848" y="40" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="end">SNAPSHOT</text>
+    <line x1="32" y1="56" x2="848" y2="56" stroke="#243044"/>
+    <text x="32" y="118" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="48" font-weight="650" letter-spacing="0" text-anchor="start">19</text>
+    <text x="32" y="148" fill="#74829B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">PUBLIC REPOS</text>
+    <text x="320" y="118" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="36" font-weight="640" letter-spacing="0" text-anchor="start">2024-11-10</text>
+    <text x="320" y="148" fill="#74829B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">SINCE</text>
+    <text x="32" y="196" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="20" font-weight="560" letter-spacing="0" text-anchor="start">Java 5   ·   Python 2   ·   HTML 1   ·   MDX 1   ·   TypeScript 1</text>
+    <text x="32" y="226" fill="#74829B" font-family="system-ui, Segoe UI, sans-serif" font-size="14" font-weight="500" letter-spacing="0" text-anchor="start">Primary language of public repositories, forks excluded.</text>
+  
+</svg>
