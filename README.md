@@ -50,19 +50,6 @@ Technology, product, automation, and business are one system. The diagram names 
 
 </div>
 
-## Projects and Open Source
-
-### [proyecto-individual-TS](https://github.com/Lautarolecube/proyecto-individual-TS)
-
-Coursework in object-oriented TypeScript, with Vitest unit tests and continuous integration on GitHub Actions.
-
-`TypeScript` · `Vitest` · `GitHub Actions`
-
-### [gestor-de-correo](https://github.com/Lautarolecube/gestor-de-correo)
-
-Java model of an email manager. A message carries subject, body, sender, and contact. The public source also includes folders for received mail, sent mail, drafts, and spam, plus a contact list.
-
-`Java`
 
 ## Contact
 
