@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="852" viewBox="0 0 880 852" role="img">
+  <style>
+    .motion-dash { stroke-dasharray: 5 7; animation: march 9s linear infinite; }
+    .motion-dot { animation: pulse 2.8s ease-in-out infinite; }
+    .motion-cursor { animation: blink 1.15s steps(1) infinite; }
+    @keyframes march { to { stroke-dashoffset: -96; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+    @keyframes blink { 0%, 45% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .motion-dash, .motion-dot, .motion-cursor { animation: none; }
+    }
+  </style>
+  <rect width="880" height="852" fill="#080B12"/>
+  <rect x="0.5" y="0.5" width="879" height="851" fill="none" stroke="#243044"/>
+  
+    <text x="24" y="36" fill="#74829B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.4" text-anchor="start">WHO I AM</text>
+    
+      <rect x="24" y="56" width="832" height="96" fill="#101827" stroke="#243044"/>
+      <text x="46" y="92" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">01</text>
+      <text x="102" y="92" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">Systems Information Engineering student with a strong focus on</text><text x="102" y="120" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">software, systems architecture and digital products.</text>
+    
+      <rect x="24" y="164" width="832" height="124" fill="#101827" stroke="#243044"/>
+      <text x="46" y="200" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">02</text>
+      <text x="102" y="200" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">🚀 I build solutions that combine frontend, backend, integrations,</text><text x="102" y="228" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">automation and business logic instead of treating technology as an</text><text x="102" y="256" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">isolated layer.</text>
+    
+      <rect x="24" y="300" width="832" height="124" fill="#101827" stroke="#243044"/>
+      <text x="46" y="336" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">03</text>
+      <text x="102" y="336" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">⚙️ Currently working with digital operations, integrations, order</text><text x="102" y="364" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">flows, automation and operational monitoring in e-commerce</text><text x="102" y="392" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">environments.</text>
+    
+      <rect x="24" y="436" width="832" height="96" fill="#101827" stroke="#243044"/>
+      <text x="46" y="472" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">04</text>
+      <text x="102" y="472" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">🧠 Interested in Artificial Intelligence, automation, software</text><text x="102" y="500" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">engineering, product development and digital business.</text>
+    
+      <rect x="24" y="544" width="832" height="96" fill="#101827" stroke="#243044"/>
+      <text x="46" y="580" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">05</text>
+      <text x="102" y="580" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">📊 I enjoy turning complex operations into observable systems,</text><text x="102" y="608" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">dashboards, workflows and measurable processes.</text>
+    
+      <rect x="24" y="652" width="832" height="96" fill="#101827" stroke="#243044"/>
+      <text x="46" y="688" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">06</text>
+      <text x="102" y="688" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">🧩 I like working on problems where technology meets real business</text><text x="102" y="716" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">constraints.</text>
+    
+      <rect x="24" y="760" width="832" height="68" fill="#101827" stroke="#243044"/>
+      <text x="46" y="796" fill="#3478F6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" letter-spacing="1.2" text-anchor="start">07</text>
+      <text x="102" y="796" fill="#E7EEF9" font-family="system-ui, Segoe UI, sans-serif" font-size="18" font-weight="500" letter-spacing="0" text-anchor="start">🌎 Building from Argentina, thinking globally.</text>
+    
+  
+</svg>

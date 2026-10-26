@@ -35,6 +35,22 @@ const proposal = [
   "and experiences.",
 ];
 
+const about = [
+  ["01", "Systems Information Engineering student with a strong focus on software, systems architecture and digital products."],
+
+  ["02", "🚀 I build solutions that combine frontend, backend, integrations, automation and business logic instead of treating technology as an isolated layer."],
+
+  ["03", "⚙️ Currently working with digital operations, integrations, order flows, automation and operational monitoring in e-commerce environments."],
+
+  ["04", "🧠 Interested in Artificial Intelligence, automation, software engineering, product development and digital business."],
+
+  ["05", "📊 I enjoy turning complex operations into observable systems, dashboards, workflows and measurable processes."],
+
+  ["06", "🧩 I like working on problems where technology meets real business constraints."],
+
+  ["07", "🌎 Building from Argentina, thinking globally."],
+];
+
 const pillars = [
   ["01", "Technology", ["Software engineering", "and architecture"]],
   ["02", "Product", ["Digital products and", "product engineering"]],
@@ -44,8 +60,9 @@ const pillars = [
 
 const stack = [
   ["Frontend", ["React   ·   TypeScript   ·   Tailwind CSS", "shadcn/ui   ·   GSAP   ·   Framer Motion", "Three.js   ·   R3F"]],
-  ["Backend / Data", ["Node.js   ·   PostgreSQL   ·   Supabase", "Redis   ·   RabbitMQ   ·   REST APIs"]],
-  ["Automation", ["n8n   ·   Webhooks   ·   Event-driven systems"]],
+  ["Backend / Data", ["Node.js   ·   PostgreSQL   ·   Supabase   ·   MongoDB", "Redis   ·   RabbitMQ   ·   REST APIs"]],
+  ["Cloud", ["AWS   ·   DigitalOcean   ·   Google Cloud"]],
+  ["Automation", ["n8n   ·   Webhooks   · APIs   · Event-driven systems"]],
   ["Tools", ["Git   ·   GitHub   ·   Docker", "Cursor   ·   Figma   ·   Jira"]],
 ];
 
@@ -76,6 +93,23 @@ function documentSvg(height, theme, body) {
   ${body}
 </svg>
 `;
+}
+
+function wrap(value, maxChars) {
+  const words = String(value).split(/\s+/).filter(Boolean);
+  const lines = [];
+  let current = "";
+  for (const word of words) {
+    const next = current ? `${current} ${word}` : word;
+    if (current && next.length > maxChars) {
+      lines.push(current);
+      current = word;
+    } else {
+      current = next;
+    }
+  }
+  if (current) lines.push(current);
+  return lines.length ? lines : [""];
 }
 
 function text(x, y, content, { size, fill, family, weight = 500, anchor = "start", spacing = 0, cls = "" }) {
@@ -120,6 +154,33 @@ function hero(theme) {
   `;
 
   return documentSvg(404, theme, body);
+}
+
+function aboutSvg(theme) {
+  const cardX = 24;
+  const cardW = 832;
+  let y = 56;
+  const blocks = about.map(([code, sentence]) => {
+    const lines = wrap(sentence, 70);
+    const height = 22 + lines.length * 28 + 18;
+    const copy = lines
+      .map((line, index) => text(cardX + 78, y + 36 + index * 28, line, { size: 18, fill: theme.fg, family: sans }))
+      .join("");
+    const block = `
+      <rect x="${cardX}" y="${y}" width="${cardW}" height="${height}" fill="${theme.surface}" stroke="${theme.line}"/>
+      ${text(cardX + 22, y + 36, code, { size: 13, fill: theme.accent, family: mono, spacing: 1.2 })}
+      ${copy}
+    `;
+    y += height + 12;
+    return block;
+  });
+
+  const body = `
+    ${text(24, 36, "WHO I AM", { size: 13, fill: theme.muted, family: mono, spacing: 1.4 })}
+    ${blocks.join("")}
+  `;
+
+  return documentSvg(y + 12, theme, body);
 }
 
 function pillarsSvg(theme) {
@@ -233,6 +294,7 @@ function writeAsset(name, contents) {
 
 for (const [name, theme] of Object.entries(themes)) {
   writeAsset(`hero-${name}.svg`, hero(theme));
+  writeAsset(`about-${name}.svg`, aboutSvg(theme));
   writeAsset(`pillars-${name}.svg`, pillarsSvg(theme));
   writeAsset(`stack-${name}.svg`, stackSvg(theme));
 }

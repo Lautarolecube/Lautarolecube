@@ -8,7 +8,7 @@ Desde esta carpeta:
 npm run generate
 ```
 
-El script no tiene dependencias. Reescribe `assets/hero-*.svg`, `assets/pillars-*.svg` y `assets/stack-*.svg`. La actividad pública sale de `https://api.github.com/users/Lautarolecube` y de la lista de repositorios. Si esa API no responde y ya existen `assets/activity-dark.svg` y `assets/activity-light.svg`, los deja como están. No completa cifras a mano.
+El script no tiene dependencias. Reescribe `assets/hero-*.svg`, `assets/about-*.svg`, `assets/pillars-*.svg` y `assets/stack-*.svg`. La actividad pública sale de `https://api.github.com/users/Lautarolecube` y de la lista de repositorios. Si esa API no responde y ya existen `assets/activity-dark.svg` y `assets/activity-light.svg`, los deja como están. No completa cifras a mano.
 
 ## Qué se puede publicar
 
